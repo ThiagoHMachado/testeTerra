@@ -10,7 +10,7 @@ namespace testeTerra.Domain.DTO.Request
     {
         public string User { get; set; } = "ThiagoHMachado";
         public string Repos { get; set; } = "testeTerra";
-        public string Token { get; set; } = "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";
+        public string Token { get; set; } = "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";
         public string Url { get; set; }
     }
 }
