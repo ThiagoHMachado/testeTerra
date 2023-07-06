@@ -40,8 +40,7 @@ namespace testeTerra.GitHub.Services
             if (response.IsSuccessStatusCode)
             {
                 var ret = response.Content.ReadAsStringAsync().Result;
-                var rere = JsonConvert.DeserializeObject<Response>(ret);
-                return rere;
+                return JsonConvert.DeserializeObject<Response>(ret);               
             }
             var errMsg = response.Content.ReadAsStringAsync().Result;
             
@@ -57,8 +56,7 @@ namespace testeTerra.GitHub.Services
             if (response.IsSuccessStatusCode)
             {
                 var ret = response.Content.ReadAsStringAsync().Result;
-                var rere = JsonConvert.DeserializeObject<Response>(ret);
-                return rere;
+                return JsonConvert.DeserializeObject<Response>(ret);               
             }
             var errMsg = response.Content.ReadAsStringAsync().Result;
             throw new Exception(errMsg);
@@ -71,8 +69,7 @@ namespace testeTerra.GitHub.Services
             if (response.IsSuccessStatusCode)
             {
                 var ret = response.Content.ReadAsStringAsync().Result;
-                var rere = JsonConvert.DeserializeObject<List<Response>>(ret);
-                return rere;
+                return JsonConvert.DeserializeObject<List<Response>>(ret);                 
             }            
             var errMsg = response.Content.ReadAsStringAsync().Result;
             throw new Exception(errMsg);
